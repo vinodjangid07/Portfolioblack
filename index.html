@@ -20,15 +20,16 @@
   
   </head>
 <body>
+    <div id="preloader"></div>
     <header>
-        <div id="preloader"></div>
+      
          
         <div class="navbar" id="navbar">
             <div class="logo">Vinod</div>
             <div class="navbar-tabs" id="navbar-tabs">
                 <ul class="navbar-tabs-ul">
                     <a href="#home">
-                        <li class="home" class="navbar-tabs-li"data-aos="fade-down" data-aos-delay="100">Home();</li></a>
+                        <li class="home activeThistab" class="navbar-tabs-li "data-aos="fade-down" data-aos-delay="100">Home();</li></a>
                     <a href="#about">
                     <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">AboutMe();</li></a>
                     <a href="#skills">
@@ -47,17 +48,19 @@
     <main>
         <!-- hamburger -->
         <div class="hamburger" id="hamburger" data-aos="fade-down" data-aos-delay="900">
+            <div class="hamburgerbase">
             <button id="hamburger-button" onclick="hamburgerMenu()">
                 <span class="burger-bar" id="burger-bar1"></span>
                 <span class="burger-bar" id="burger-bar2"></span>
                 <span class="burger-bar" id="burger-bar3"></span></button>
+            </div>
         </div>
         <!-- hamburger -->
         <div class="mobiletogglemenu" id="mobiletogglemenu">
             <div class="emptyarea" id="emptyarea"></div>
             <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
                 <a href="#home">
-                    <li id="home-mobile-tab" class="mobile-navbar-tabs-li home" onclick="hidemenubyli()">Home();</li></a>
+                    <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">Home();</li></a>
                 <a href="#about">
                 <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about"onclick="hidemenubyli()">AboutMe();</li></a>
                 <a href="#skills">
@@ -113,15 +116,15 @@
                     <div class="language-speak"><article>>_ Languages i speak:</article></div>
                     <div class="languages-section">
 
-                        <div class="language-name"data-aos="slide-up"><article>HTML</article>
+                        <div class="language-name"data-aos="slide-up" data-tilt-glare data-tilt-max-glare="0.3"><article>HTML</article>
                         <p>INTERMEDIATE!</p></div>
-                        <div class="language-name"data-aos="slide-up"><article>CSS</article>
+                        <div class="language-name"data-aos="slide-up"data-tilt-glare data-tilt-max-glare="0.3"><article>CSS</article>
                             <p>ADVANCED!</p></div>
-                            <div class="language-name"data-aos="slide-up"><article>BOOTSTRAP</article>
+                            <div class="language-name"data-aos="slide-up"data-tilt-glare data-tilt-max-glare="0.3"><article>BOOTSTRAP</article>
                                 <p>INTERMEDIATE!</p></div>
-                                <div class="language-name"data-aos="slide-up"><article>REACT JS</article>
+                                <div class="language-name"data-aos="slide-up"data-tilt-glare data-tilt-max-glare="0.3"><article>REACT JS</article>
                                     <p>BEGINNER!</p></div>
-                                <div class="language-name"data-aos="slide-up"><article>JAVASCRIPT</article>
+                                <div class="language-name"data-aos="slide-up"data-tilt-glare data-tilt-max-glare="0.3"><article>JAVASCRIPT</article>
                                     <p>INTERMEDIATE!</p></div>
                                     
 
@@ -134,13 +137,13 @@
                     <div class="enjoy-designing language-speak" data-aos="slide-up"><article>Things i enjoy Designing:</article></div>
                     <div class="tool-section languages-section">
 
-                        <div class="tool-name language-name" data-aos="slide-up"><article>ADOBE PHOTOSHOP</article>
+                        <div class="tool-name language-name" data-aos="slide-up"data-tilt-glare data-tilt-max-glare="0.3"data-tilt-glare data-tilt-max-glare="0.3"><article>ADOBE PHOTOSHOP</article>
                         <p>ADVANCED!</p></div>
-                        <div class="tool-name language-name" data-aos="slide-up"><article>FONT AWESOME</article>
+                        <div class="tool-name language-name" data-aos="slide-up"data-tilt-glare data-tilt-max-glare="0.3"data-tilt-glare data-tilt-max-glare="0.3"><article>FONT AWESOME</article>
                             <p>INTERMEDIATE!</p></div>
-                            <div class="tool-name language-name" data-aos="slide-up"><article>CANVA</article>
+                            <div class="tool-name language-name" data-aos="slide-up"data-tilt-glare data-tilt-max-glare="0.3"data-tilt-glare data-tilt-max-glare="0.3"><article>CANVA</article>
                                 <p>INTERMEDIATE!</p></div>
-                                <div class="tool-name language-name" data-aos="slide-up"><article>ADOBE AI</article>
+                                <div class="tool-name language-name" data-aos="slide-up"data-tilt-glare data-tilt-max-glare="0.3"data-tilt-glare data-tilt-max-glare="0.3"><article>ADOBE AI</article>
                                     <p>BEGINNER!</p></div>
                                
                                     
@@ -154,9 +157,9 @@
                     <div class="languages-i-know language-speak" data-aos="slide-up"><article>>_ Other Languages i Know:</article></div>
                     <div class="programming-section languages-section">
 
-                        <div class="language-name language-name" data-aos="slide-up"><article>C</article>
+                        <div class="language-name language-name" data-aos="slide-up"data-tilt-glare data-tilt-max-glare="0.3"><article>C</article>
                         <p>INTERMEDIATE!</p></div>
-                        <div class="language-name language-name" data-aos="slide-up"><article>C++</article>
+                        <div class="language-name language-name" data-aos="slide-up"data-tilt-glare data-tilt-max-glare="0.3"><article>C++</article>
                             <p>BEGINNER!</p></div>  
                     </div>
 
@@ -218,13 +221,23 @@
 </body>
 
 <script src="main.js"></script>
-
-
-
 <!-- for aos animation -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+
+    <!-- tilt js -->
+    <!-- <script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll(".language-name"), {
+		max: 25,
+		speed: 100,
+        perspective:1000
+	}); -->
+	
+	//It also supports NodeList
+	// VanillaTilt.init(document.querySelectorAll(".profile-card"));
+</script>
 
 </html>
