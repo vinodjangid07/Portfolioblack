@@ -27,6 +27,9 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+
 }
 :root{
     font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -34,6 +37,7 @@ html {
 }
 
 body{
+    /* background-color:#ece7e1; */
     background-color: black;
     overflow-x: hidden;
 }
@@ -157,11 +161,11 @@ header{
     height: fit-content;
 }
 .landing-page-container{
-    background-image: url(pexels-naveen-annam-1578287.png);
+    /* background-image: url(pexels-naveen-annam-1578287.png); */
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: black;
+    /* background-color: black; */
     width: 100%;
     height: 100vh;
     display: flex;
@@ -562,6 +566,8 @@ header{
 .social-media-container a:hover{
 transform: translate(-2px ,-5px);
 transition-duration: .3s;
+background-color: tomato;
+border: none;
 }
 .footer-bottom{
     width: 100%;

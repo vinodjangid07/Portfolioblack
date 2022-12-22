@@ -62,3 +62,13 @@ navLi.forEach( li => {
   }
 })
 })
+
+
+// when user changes tab 
+let docWalaTitle = document.title;
+window.addEventListener('blur', () =>{
+  document.title = "Hey! Come back :(";
+})
+window.addEventListener('focus',() =>{
+  document.title = docWalaTitle;
+})
